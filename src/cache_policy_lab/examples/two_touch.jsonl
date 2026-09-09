@@ -1,0 +1,25 @@
+{"data_classification":"SYNTHETIC","description":"Original adverse example: each prefix used exactly twice, then never again","schema_version":1,"trace_id":"two_touch","type":"trace_metadata"}
+{"key":"pair-0","prefix_tokens":64,"suffix_tokens":16,"type":"request"}
+{"key":"pair-0","prefix_tokens":64,"suffix_tokens":16,"type":"request"}
+{"key":"pair-1","prefix_tokens":64,"suffix_tokens":16,"type":"request"}
+{"key":"pair-1","prefix_tokens":64,"suffix_tokens":16,"type":"request"}
+{"key":"pair-2","prefix_tokens":64,"suffix_tokens":16,"type":"request"}
+{"key":"pair-2","prefix_tokens":64,"suffix_tokens":16,"type":"request"}
+{"key":"pair-3","prefix_tokens":64,"suffix_tokens":16,"type":"request"}
+{"key":"pair-3","prefix_tokens":64,"suffix_tokens":16,"type":"request"}
+{"key":"pair-4","prefix_tokens":64,"suffix_tokens":16,"type":"request"}
+{"key":"pair-4","prefix_tokens":64,"suffix_tokens":16,"type":"request"}
+{"key":"pair-5","prefix_tokens":64,"suffix_tokens":16,"type":"request"}
+{"key":"pair-5","prefix_tokens":64,"suffix_tokens":16,"type":"request"}
+{"key":"pair-6","prefix_tokens":64,"suffix_tokens":16,"type":"request"}
+{"key":"pair-6","prefix_tokens":64,"suffix_tokens":16,"type":"request"}
+{"key":"pair-7","prefix_tokens":64,"suffix_tokens":16,"type":"request"}
+{"key":"pair-7","prefix_tokens":64,"suffix_tokens":16,"type":"request"}
+{"key":"pair-8","prefix_tokens":64,"suffix_tokens":16,"type":"request"}
+{"key":"pair-8","prefix_tokens":64,"suffix_tokens":16,"type":"request"}
+{"key":"pair-9","prefix_tokens":64,"suffix_tokens":16,"type":"request"}
+{"key":"pair-9","prefix_tokens":64,"suffix_tokens":16,"type":"request"}
+{"key":"pair-10","prefix_tokens":64,"suffix_tokens":16,"type":"request"}
+{"key":"pair-10","prefix_tokens":64,"suffix_tokens":16,"type":"request"}
+{"key":"pair-11","prefix_tokens":64,"suffix_tokens":16,"type":"request"}
+{"key":"pair-11","prefix_tokens":64,"suffix_tokens":16,"type":"request"}

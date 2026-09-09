@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "version": "0.1.0",
+  "fixture_line_endings": "LF",
+  "deterministic_sha256": "a5b242ec91a423da9a6ea6352ff35f29918a9db17b0833b999ad19502a3b799c",
+  "total_work_tokens": {
+    "hot_scan/lru": 3808,
+    "hot_scan/two_hit": 3616,
+    "hot_scan/fifo": 3808,
+    "two_touch/lru": 1152,
+    "two_touch/two_hit": 1920,
+    "two_touch/fifo": 1152
+  },
+  "protocol": "cache-policy-lab-v1",
+  "observed_validation": {
+    "date": "2026-09-09",
+    "platform": "Windows",
+    "python": "3.12.14",
+    "fresh_venv_install": false,
+    "standalone_tests_passed": 28,
+    "clean_linux": "NOT_YET_RUN",
+    "release_commit": null,
+    "isolated_venv_package_reinstall": true,
+    "pip_check": "PASSED",
+    "fixture_recipe": "BYTE_FOR_BYTE_MATCH"
+  },
+  "note": "The 0.1.0 candidate was rebuilt and reinstalled in the existing isolated Windows virtual environment. Its digest binds the versioned deterministic payload including exact raw LF fixture hashes. It differs from the 0.1.0.dev0 candidate because the package version changed; model counters are unchanged. CI must install into a fresh Linux environment and reproduce this expected value on the exact intended release commit. The external release receipt records that commit and actual CI result without self-referencing this source record. Passing behavior checks does not establish novelty, legal clearance or production performance."
+}

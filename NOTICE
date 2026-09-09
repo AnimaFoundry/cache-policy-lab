@@ -1,0 +1,8 @@
+Cache Policy Lab
+Original AI-assisted implementation developed for the AnimaFoundry project, 2026.
+
+This package implements elementary offline cache-policy examples from a new
+event protocol. Related algorithms and simulation tools are attributed in the
+README and reports. No TinyLFU, ARC, SGLang or libCacheSim implementation is
+vendored, linked or claimed as original here. The simple two-hit policy is not
+TinyLFU. This notice is attribution, not a patent clearance determination.

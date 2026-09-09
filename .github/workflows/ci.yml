@@ -1,0 +1,41 @@
+name: Standalone acceptance
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  acceptance:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+      - name: Check out the exact tested revision
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Select Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Verify source allowlist and fixture recipe
+        run: |
+          git rev-parse HEAD
+          python scripts/verify_release.py --tracked
+          python scripts/make_cache_lab_fixtures.py --check
+      - name: Install into a fresh virtual environment
+        run: |
+          python -m venv .venv
+          .venv/bin/python -m pip install --no-deps .
+          .venv/bin/python -m pip check
+      - name: Test the installed package
+        run: .venv/bin/python -I -m unittest discover -s tests -v
+      - name: Reproduce the deterministic installed CLI report
+        run: .venv/bin/python scripts/verify_demo.py

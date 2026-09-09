@@ -1,0 +1,329 @@
+{
+  "schema_version": "0.1",
+  "product": "Cache Policy Lab",
+  "proposed_repository": "AnimaFoundry/cache-policy-lab",
+  "artifact_type": "research_tool",
+  "review_date": "2026-09-09",
+  "review_timezone": "Asia/Shanghai",
+  "retrieval_clock_checked_at": "2026-09-09T00:57:27Z",
+  "reviewer": "Codex scoped publication research agent",
+  "review_state": "scoped_open_source_review",
+  "review_document": "docs/IP_REVIEW.md",
+  "scope": {
+    "included": [
+      "Offline JSONL replay of opaque prefix IDs, prefix-token sizes and uncached suffix-token work",
+      "Ordinary LRU, FIFO and bounded-history two-hit admission baselines",
+      "Declared modeled cache-token/history-slot budgets and accounting checks",
+      "Deterministic reports and original synthetic examples"
+    ],
+    "excluded": [
+      "LLM model execution, prefill/decode batching and GPU control",
+      "Inference node routing or learned schedulers",
+      "OIE-011 shared KV-memory reclamation",
+      "OIE-012 drift-triggered admission resets",
+      "Novelty or invention-publication assertion"
+    ]
+  },
+  "development_provenance": {
+    "status": "RELEASE_CANDIDATE_SOURCE_REVIEWED",
+    "method": "AI-assisted code newly written for this task. The parent project's pre-existing local simulation (outside this distribution) was read by the kernel author to preserve simple policy semantics; parity checks compare the new engine with that frozen local implementation. Root and kernel authors confirmed no third-party implementation text was consulted or imported this turn.",
+    "third_party_implementation_imported_for_this_review": false,
+    "third_party_source_similarity_audit": "NOT_PERFORMED",
+    "copyright_ownership_legal_determination": "NOT_PERFORMED",
+    "originality_guarantee": false,
+    "runtime_dependency_target": "Python >=3.11 and standard library only; pyproject dependencies=[]; interpreter not bundled",
+    "build_dependency_inventory": [
+      "setuptools==84.0.0; external build dependency, not vendored"
+    ],
+    "fixture_policy": "Authored synthetic fixtures only; user traces excluded from release by default",
+    "final_product_path": ".",
+    "reviewed_commit": null,
+    "artifact_hash_manifest": "working_tree_snapshot.files in this document; external release receipt must bind all 24 files including this manifest to the tested commit",
+    "note": "The 0.1.0 candidate retains LF bytes and reviewed original runtime behavior. Changes from the previous standalone candidate affect the package version and release documentation only; no third-party implementation, assets, fixtures or dependencies were added. The repository exists as private staging. Local and remote commits may differ; the external receipt must bind the actual tested remote commit and full file tree. No clean-room certification or source similarity guarantee."
+  },
+  "licensing": {
+    "original_software_license": "Apache-2.0",
+    "official_text": "https://www.apache.org/licenses/LICENSE-2.0",
+    "unrelated_third_party_patent_license": false,
+    "trademark_clearance": "UNKNOWN"
+  },
+  "patent_screen": {
+    "result": "No concrete overlap blocker identified among four previously flagged leads for the stated design",
+    "legal_status_verified": false,
+    "freedom_to_operate": "UNKNOWN",
+    "legal_clearance": false,
+    "reviewed_documents": [
+      {
+        "publication": "US20250238694A1",
+        "claims_read": "1-20",
+        "status_as_displayed": "Pending",
+        "verified_status": "UNKNOWN",
+        "source_id": "P01"
+      },
+      {
+        "publication": "CN120950665A",
+        "claims_read": "1-10 in Chinese",
+        "status_as_displayed": "Pending",
+        "verified_status": "UNKNOWN",
+        "source_id": "P02"
+      },
+      {
+        "publication": "CN121050863B",
+        "claims_read": "1-4 and 10-13 in English translation",
+        "status_as_displayed": "Active",
+        "verified_status": "UNKNOWN",
+        "source_id": "P03"
+      },
+      {
+        "publication": "CN120909737B",
+        "claims_read": "1 and 2-7 inspected in English translation",
+        "status_as_displayed": "Active",
+        "verified_status": "UNKNOWN",
+        "source_id": "P04"
+      }
+    ],
+    "interpretation": "Technical comparison only; no all-family claim construction, equivalents analysis, register verification or general cache-patent clearance."
+  },
+  "name_check": {
+    "date": "2026-09-09",
+    "interface": "Connected GitHub repository-search tool",
+    "query": "\"cache-policy-lab\" in:name",
+    "returned_repositories": [],
+    "web_search_page": "FETCH_FAILED",
+    "indexed_site_search": "EMPTY_RESULTS",
+    "interpretation": "No obvious repository collision returned; availability and trademarks not cleared"
+  },
+  "release_assessment": {
+    "recommendation": "CONTINUE_TO_EXACT_COMMIT_LINUX_ACCEPTANCE",
+    "requires_new_invention_gate": false,
+    "invention_publication_counts_changed": false,
+    "concrete_ip_blockers_found": [],
+    "pending_artifact_checks": [
+      "Exact final remote commit and full 24-file tree binding",
+      "Fresh clean Linux acceptance and independent CI reproduction on that commit",
+      "Public visibility, verified tag/release and external publication receipt"
+    ],
+    "new_review_triggers": [
+      "Add live model inference or mechanisms close to the screened patent claims",
+      "Add external source code, dependencies, datasets, assets or branding",
+      "Receive a concrete rights claim or identify a disputed contribution",
+      "Add OIE-011 or OIE-012 as executable features"
+    ],
+    "zero_dispute_guarantee": false,
+    "human_legal_review": "NOT_PERFORMED",
+    "completed_artifact_checks": [
+      "Final source scope rechecked: no executable mechanism added beyond the screened offline design",
+      "Complete Apache license, NOTICE, attribution and limitations retained",
+      "Only original fixed-recipe synthetic fixtures included",
+      "All 28 installed-package Windows tests, pip check and fixture recipe verification passed",
+      "Dedicated AnimaFoundry/cache-policy-lab private repository and write access verified by publishing agent"
+    ]
+  },
+  "sources": [
+    {
+      "id": "L01",
+      "title": "Copyright Office Circular 61",
+      "url": "https://www.copyright.gov/circs/circ61.pdf",
+      "accessed": "2026-09-09",
+      "scope": "Page 1 expression/function distinction"
+    },
+    {
+      "id": "L02",
+      "title": "Apache License 2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0",
+      "accessed": "2026-09-09",
+      "scope": "Sections 2-4 and 6-7"
+    },
+    {
+      "id": "L03",
+      "title": "USPTO Managing a patent",
+      "url": "https://www.uspto.gov/patents/basics/manage",
+      "accessed": "2026-09-09",
+      "scope": "Patent rights and claim/product comparison"
+    },
+    {
+      "id": "N01",
+      "title": "2Q: A Low Overhead High Performance Buffer Management Replacement Algorithm",
+      "url": "https://www.vldb.org/conf/1994/P439.PDF",
+      "accessed": "2026-09-09",
+      "scope": "Section 2 related-work concepts; no implementation code imported"
+    },
+    {
+      "id": "P01",
+      "title": "US20250238694A1",
+      "url": "https://patents.google.com/patent/US20250238694A1/en",
+      "accessed": "2026-09-09",
+      "scope": "Published claims via document mirror; no official register verification"
+    },
+    {
+      "id": "P02",
+      "title": "CN120950665A",
+      "url": "https://patents.google.com/patent/CN120950665A/zh",
+      "accessed": "2026-09-09",
+      "scope": "Published claims via document mirror; no official register verification"
+    },
+    {
+      "id": "P03",
+      "title": "CN121050863B",
+      "url": "https://patents.google.com/patent/CN121050863B/en",
+      "accessed": "2026-09-09",
+      "scope": "Granted-version text via document mirror; no official register verification"
+    },
+    {
+      "id": "P04",
+      "title": "CN120909737B",
+      "url": "https://patents.google.com/patent/CN120909737B/en",
+      "accessed": "2026-09-09",
+      "scope": "Granted-version text supplements earlier A-only lead; no official register verification"
+    },
+    {
+      "id": "R01",
+      "title": "GitHub repository-name search",
+      "url": "https://github.com/search?q=%22cache-policy-lab%22&type=repositories",
+      "accessed": "2026-09-09",
+      "scope": "Web page failed; successful connected repository-search response recorded separately above"
+    }
+  ],
+  "working_tree_snapshot": {
+    "captured_at_utc": "2026-09-09T01:45:33.276741Z",
+    "kind": "release_candidate_source_tree",
+    "release_revision_verified": false,
+    "files": [
+      {
+        "path": ".gitattributes",
+        "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c",
+        "provenance": "Task-local AI-assisted source, tests, documentation, configuration or packaging; adapted for standalone distribution"
+      },
+      {
+        "path": ".github/workflows/ci.yml",
+        "sha256": "795f79cdeb1d0ca5ec90de976c614dbdb8828f9458e43044fa822bebda7a808e",
+        "provenance": "Task-local AI-assisted source, tests, documentation, configuration or packaging; adapted for standalone distribution"
+      },
+      {
+        "path": ".gitignore",
+        "sha256": "aa519434a5a06c55e2e77c97cf35d67bd7fddc24385f13b378e00cf51cb80591",
+        "provenance": "Task-local AI-assisted source, tests, documentation, configuration or packaging; adapted for standalone distribution"
+      },
+      {
+        "path": "CITATION.cff",
+        "sha256": "ecd1771041890c843ee023063f99cd7b9b950a681e76d998d588b007ba3782b5",
+        "provenance": "Task-local AI-assisted source, tests, documentation, configuration or packaging; adapted for standalone distribution"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "sha256": "f81bcc9d9f051df991bcae8c6b851005e93ba1a8b7655122b266ea33d0a61439",
+        "provenance": "Task-local AI-assisted source, tests, documentation, configuration or packaging; adapted for standalone distribution"
+      },
+      {
+        "path": "LICENSE",
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "provenance": "Official Apache license text"
+      },
+      {
+        "path": "NOTICE",
+        "sha256": "aecac852131006668d0a5903ebf71cb3e92f4037336e2c2715997d915eaa771f",
+        "provenance": "Task-local AI-assisted source, tests, documentation, configuration or packaging; adapted for standalone distribution"
+      },
+      {
+        "path": "README.md",
+        "sha256": "18492e5f64b4d257fde193133593c5d5b28ac7a25ff962af9e4530a2ac93c869",
+        "provenance": "Task-local AI-assisted source, tests, documentation, configuration or packaging; adapted for standalone distribution"
+      },
+      {
+        "path": "docs/IP_REVIEW.md",
+        "sha256": "6e3a880fa9fc8d3e45f37cf84f3a92b4b5248761ec260d99c2d0b4bf1ca0f25a",
+        "provenance": "Task-local AI-assisted source, tests, documentation, configuration or packaging; adapted for standalone distribution"
+      },
+      {
+        "path": "docs/reproducibility.json",
+        "sha256": "3149a5159e30027166d02b55f283145cd4fa7fb0d49bead2b2386d9839ff2f20",
+        "provenance": "Task-local AI-assisted source, tests, documentation, configuration or packaging; adapted for standalone distribution"
+      },
+      {
+        "path": "pyproject.toml",
+        "sha256": "38ac83df915536b7bc70088a06c33de0e77a38f5f091a7009e2b6075261f411d",
+        "provenance": "Task-local AI-assisted source, tests, documentation, configuration or packaging; adapted for standalone distribution"
+      },
+      {
+        "path": "scripts/make_cache_lab_fixtures.py",
+        "sha256": "8a7976138dd4d1a142422f89422e5366612161e0d7e026721384eb09c54b5823",
+        "provenance": "Task-local AI-assisted source, tests, documentation, configuration or packaging; adapted for standalone distribution"
+      },
+      {
+        "path": "scripts/verify_demo.py",
+        "sha256": "485ab19ce18a0bacec035f00f4ba881e0c59197f4cddbade85d808ebbc47b9d4",
+        "provenance": "Task-local AI-assisted source, tests, documentation, configuration or packaging; adapted for standalone distribution"
+      },
+      {
+        "path": "scripts/verify_release.py",
+        "sha256": "9b46e74361da4467afbf8d660a435e087e0f606658232660f83f3cafada41e04",
+        "provenance": "Task-local AI-assisted source, tests, documentation, configuration or packaging; adapted for standalone distribution"
+      },
+      {
+        "path": "src/cache_policy_lab/__init__.py",
+        "sha256": "945d716006b0465c4ae4432e1d5b644bbcc62e01a786544537408089911424d2",
+        "provenance": "Task-local AI-assisted source, tests, documentation, configuration or packaging; adapted for standalone distribution"
+      },
+      {
+        "path": "src/cache_policy_lab/__main__.py",
+        "sha256": "df01ed16701592357b2dd5c5fec746642829710a75eb6a5a3d1f9e646805afa1",
+        "provenance": "Task-local AI-assisted source, tests, documentation, configuration or packaging; adapted for standalone distribution"
+      },
+      {
+        "path": "src/cache_policy_lab/examples/hot_scan.jsonl",
+        "sha256": "329ac60d46710d0bfee2d1a96e0185aeec4a7c0bf8e23ef2fd3f1ffd968a8cc8",
+        "provenance": "Original fixed-recipe synthetic fixture"
+      },
+      {
+        "path": "src/cache_policy_lab/examples/two_touch.jsonl",
+        "sha256": "d29e04bd943fdb099c46ebff0fcdfdc6778939d655c8efc88854623c52bb5891",
+        "provenance": "Original fixed-recipe synthetic fixture"
+      },
+      {
+        "path": "src/cache_policy_lab/kernel.py",
+        "sha256": "73881ad04d70a48e7c6d1c4a39383a82ca8560864c746bfa5e54e2ce29e921c8",
+        "provenance": "Task-local AI-assisted source, tests, documentation, configuration or packaging; adapted for standalone distribution"
+      },
+      {
+        "path": "src/cache_policy_lab/report.py",
+        "sha256": "57c7fb1f433a3c950c0f30983e532e156ac337e1b1ef35ed4176bf4b98f35ac5",
+        "provenance": "Task-local AI-assisted source, tests, documentation, configuration or packaging; adapted for standalone distribution"
+      },
+      {
+        "path": "src/cache_policy_lab/trace.py",
+        "sha256": "530a45d5c525573c5a908c04eea0ccc8fd619e8fc1cf4a9b4c66b1a9c033cc52",
+        "provenance": "Task-local AI-assisted source, tests, documentation, configuration or packaging; adapted for standalone distribution"
+      },
+      {
+        "path": "tests/test_cache_lab_io.py",
+        "sha256": "28a9501994b5df6a94f1a896708133552376cf83ffa77f62c4f24345f2219401",
+        "provenance": "Task-local AI-assisted source, tests, documentation, configuration or packaging; adapted for standalone distribution"
+      },
+      {
+        "path": "tests/test_cache_lab_kernel.py",
+        "sha256": "1107fc8e6dd4b4815fb01f83353e41fd505df94fac9d6cb1a6c8b5e041a8faaa",
+        "provenance": "Task-local AI-assisted source, tests, documentation, configuration or packaging; adapted for standalone distribution"
+      }
+    ],
+    "note": "Explicit 24-file standalone allowlist with LF bytes: 23 hashes below plus this Git-versioned provenance record. This file is excluded from its own hash list to avoid self-reference; the external receipt must bind all 24 file hashes and the exact tested commit. Candidate checks do not establish a published release or successful Linux run."
+  },
+  "ci_dependency_inventory": [
+    {
+      "name": "actions/checkout",
+      "version": "v7.0.1",
+      "commit": "3d3c42e5aac5ba805825da76410c181273ba90b1",
+      "source": "https://github.com/actions/checkout/releases/tag/v7.0.1",
+      "role": "External CI checkout action; not vendored or a runtime dependency"
+    },
+    {
+      "name": "actions/setup-python",
+      "version": "v7.0.0",
+      "commit": "5fda3b95a4ea91299a34e894583c3862153e4b97",
+      "source": "https://github.com/actions/setup-python/releases/tag/v7.0.0",
+      "role": "External CI Python setup action; not vendored or a runtime dependency"
+    }
+  ],
+  "repository": "AnimaFoundry/cache-policy-lab",
+  "repository_url": "https://github.com/AnimaFoundry/cache-policy-lab",
+  "candidate_version": "0.1.0"
+}

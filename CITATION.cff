@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite this software with its version and commit, and cite relevant algorithmic prior work separately."
+title: "Cache Policy Lab"
+type: software
+authors:
+  - name: "AnimaFoundry"
+version: "0.1.0"
+repository-code: "https://github.com/AnimaFoundry/cache-policy-lab"
+license: Apache-2.0
+abstract: "An offline tool for auditable comparisons of cache policies on declared synthetic or sanitized event traces."
